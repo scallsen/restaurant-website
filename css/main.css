@@ -168,11 +168,16 @@ nav {
     color: white;
   }
 
+  .cta-text {
+    padding-bottom: 1rem;
+  }
+
   .s-lunch-button {
     width: 30%;
     display: inline-block;
     text-align: center;
     font-size: 0.8rem;
+    max-width: 6rem;
   }
 
   footer {
