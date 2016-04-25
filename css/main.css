@@ -23,7 +23,7 @@ html {
   h1,
   h2,
   h3 {
-    font-family: 'Kreon', serif;
+    font-family: "Kreon", serif;
   }
 
   h1 {
@@ -31,7 +31,7 @@ html {
   }
 
   h2 {
-
+    font-size: 2rem;
   }
 
   h3 {
@@ -43,6 +43,32 @@ html {
   }
 
 /**************/
+/* NAVBAR */
+
+nav {
+  position: relative;
+}
+
+.navbar {
+  display: inline-block;
+  padding: 0;
+  position: absolute;
+  right: 0.5rem;
+  margin: 0.8rem 0 0 0;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-family: "Kreon", serif;
+  font-size: 0.8rem;
+}
+
+.logo {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.8rem;
+}
 
 /* IMAGES */
   img {
@@ -78,12 +104,20 @@ html {
   }
 
   .section-lunch,
-  .section-breakfast,
-  .section-allergysafe,
   .call-to-action {
     overflow: hidden;
     height: 30rem;
-    background-image: url(../images/placeholder-4by1.svg);
+    background-image: url(../images/placeholder-16by9.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section-breakfast,
+  .section-allergysafe {
+    overflow: hidden;
+    height: 30rem;
+    background-image: url(../images/placeholder-16by9-dark.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -91,7 +125,13 @@ html {
 
   .call-to-action {
     background-color: #cccccc;
+    text-align: center;
+  }
 
+  .cta-button {
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
   }
 
   .large-nav {
@@ -116,6 +156,16 @@ html {
     width: 80%;
     display: inline-block;
     text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+
+  .breakfast-text,
+  .cta-text,
+  .lunch-text,
+  .allergy-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
   }
 
   .s-lunch-button {
@@ -126,7 +176,6 @@ html {
   }
 
   footer {
-    background-color: #cccccc;
     position: relative;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -163,7 +212,7 @@ html {
 
   .call-to-action {
     padding-bottom: 1rem;
-    }
+  }
 
   .breakfast-text,
   .lunch-text,
@@ -179,13 +228,11 @@ html {
     width: 5rem;
   }
 
-/**************/
-
-/* MISC */
+@media only screen and (min-width: 25em) {
 
 
-/**************/
 
+}
 
 @media only screen and (min-width: 38em) {
 
@@ -198,6 +245,12 @@ html {
   }
 
 @media only screen and (min-width: 60em) {
+
+
+
+}
+
+@media only screen and (min-width: 90em) {
 
 
 
