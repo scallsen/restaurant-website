@@ -17,33 +17,19 @@ html {
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+/*  TYPOGRAPHY  */
 
+h1,
+h2,
+h3 {
+  font-family: "Kreon", serif;
+}
 
-/* TYPOGRAPHY */
-  h1,
-  h2,
-  h3 {
-    font-family: "Kreon", serif;
-  }
+h2 {
+  font-size: 2rem;
+}
 
-  h1 {
-
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
-
-  }
-
-  p {
-
-  }
-
-/**************/
-/* NAVBAR */
+/*  NAVBAR  */
 
 nav {
   position: relative;
@@ -55,9 +41,11 @@ nav {
   position: absolute;
   right: 0.5rem;
   margin: 0.8rem 0 0 0;
+  list-style-type: none;
+  float: right;
 }
 
-.navbar a {
+.navbar li a {
   display: inline-block;
   padding: 0 0.5rem;
   font-family: "Kreon", serif;
@@ -66,7 +54,11 @@ nav {
   color: black;
 }
 
-.navbar a:hover {
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a:hover {
   background-color: black;
   color: white;
 }
@@ -77,12 +69,12 @@ nav {
   bottom: 0.8rem;
 }
 
-/* IMAGES */
+/*  IMAGES  */
+
 img {
   width: 100%;
   max-width: 60em;
 }
-
 
 .nav-icon {
   width: 1.5rem;
@@ -93,9 +85,9 @@ img {
   width: 5rem;
   display: inline-block;
 }
-/**************/
 
-/* SIZING */
+/*  SIZING  */
+
 body {
   margin: 0;
 }
@@ -119,7 +111,7 @@ h1 {
 .call-to-action {
   overflow: hidden;
   height: 30rem;
-  background-image: url(../images/placeholder-16by9.svg);
+  background-image: url("../images/placeholder-16by9.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -129,14 +121,14 @@ h1 {
 .section-allergysafe {
   overflow: hidden;
   height: 30rem;
-  background-image: url(../images/placeholder-16by9-dark.svg);
+  background-image: url("../images/placeholder-16by9-dark.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .call-to-action {
-  background-color: #cccccc;
+  background-color: #ccc;
   text-align: center;
 }
 
@@ -145,7 +137,8 @@ h1 {
   background-color: black;
   padding: 0.5rem;
   text-decoration: none;
-  font-family: "Kreon", serif;  }
+  font-family: "Kreon", serif;
+}
 
 .cta-button:hover {
   background-color: white;
@@ -162,7 +155,7 @@ h1 {
   text-align: left;
   padding-left: 1rem;
   padding-right: 1rem;
-  }
+}
 
 .breakfast-text,
 .cta-text,
@@ -205,7 +198,7 @@ a {
 .acfood-logo {
   width: 6rem;
   position: absolute;
-  left: 3%
+  left: 3%;
 }
 
 .social-media-buttons {
@@ -266,6 +259,8 @@ section {
     width: 60%;
   }
 
+}
+
 @media only screen and (min-width: 60em) {
 
   .breakfast-text,
@@ -281,7 +276,7 @@ section {
   }
 
   .information-text {
-    width: 100%
+    width: 100%;
   }
 
   h2 {
@@ -292,6 +287,7 @@ section {
     font-size: 120%;
     line-height: 1.4;
   }
+
 }
 
 @media only screen and (min-width: 90em) {
