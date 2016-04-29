@@ -57,11 +57,18 @@ nav {
   margin: 0.8rem 0 0 0;
 }
 
-.navbar li {
+.navbar a {
   display: inline-block;
   padding: 0 0.5rem;
   font-family: "Kreon", serif;
   font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  background-color: black;
+  color: white;
 }
 
 .logo {
@@ -71,170 +78,191 @@ nav {
 }
 
 /* IMAGES */
-  img {
-    width: 100%;
-    max-width: 60em;
-  }
+img {
+  width: 100%;
+  max-width: 60em;
+}
 
 
-  .nav-icon {
-    width: 1.5rem;
-    display: inline-block;
-  }
+.nav-icon {
+  width: 1.5rem;
+  display: inline-block;
+}
 
-  .logo {
-    width: 5rem;
-    display: inline-block;
-  }
+.logo {
+  width: 5rem;
+  display: inline-block;
+}
 /**************/
 
 /* SIZING */
-  body {
-    margin: 0;
+body {
+  margin: 0;
+}
+
+section {
+  text-align: center;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  display: inline-block;
+}
+
+.s-lunch-options {
+  max-width: 20rem;
+  display: block;
+}
+
+.section-lunch,
+.call-to-action {
+  overflow: hidden;
+  height: 30rem;
+  background-image: url(../images/placeholder-16by9.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-breakfast,
+.section-allergysafe {
+  overflow: hidden;
+  height: 30rem;
+  background-image: url(../images/placeholder-16by9-dark.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.call-to-action {
+  background-color: #cccccc;
+  text-align: center;
+}
+
+.cta-button {
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-family: "Kreon", serif;  }
+
+.cta-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.large-nav {
+  display: none;
+}
+
+.large-nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.large-nav-item {
+
+}
+
+.breakfast-text,
+.cta-text,
+.lunch-text,
+.allergy-text,
+.information-text {
+  width: 80%;
+  display: inline-block;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
   }
 
-  section {
-    text-align: center;
-    display: block;
-    padding-bottom: 1rem;
-  }
+.breakfast-text,
+.cta-text,
+.lunch-text,
+.allergy-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
 
-  h1 {
-    display: inline-block;
-  }
+.cta-text {
+  padding-bottom: 1rem;
+}
 
-  .section-lunch,
-  .call-to-action {
-    overflow: hidden;
-    height: 30rem;
-    background-image: url(../images/placeholder-16by9.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+.s-lunch-button {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.8rem;
+  max-width: 6rem;
+  text-decoration: none;
+  color: white;
+}
 
-  .section-breakfast,
-  .section-allergysafe {
-    overflow: hidden;
-    height: 30rem;
-    background-image: url(../images/placeholder-16by9-dark.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+.s-lunch-button:hover {
+  font-weight: bold;
+}
 
-  .call-to-action {
-    background-color: #cccccc;
-    text-align: center;
-  }
+footer {
+  position: relative;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  overflow: visible;
+}
 
-  .cta-button {
-    color: white;
-    background-color: black;
-    padding: 0.5rem;
-  }
+a {
+  padding: 0;
+  margin: 0;
+}
 
-  .large-nav {
-    display: none;
-  }
+.acfood-logo {
+  width: 6rem;
+  position: absolute;
+  left: 3%
+}
 
-  .large-nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+.social-media-buttons {
+  text-align: right;
+  display: inline-block;
+  position: absolute;
+  right: 3%;
+}
 
-  .large-nav-item {
+.social-media-buttons a {
+  display: inline-block;
+  width: 2rem;
+}
 
-  }
+.social-media-buttons a:hover {
+  border: 1px solid black;
+}
 
-  .breakfast-text,
-  .cta-text,
-  .lunch-text,
-  .allergy-text,
-  .information-text {
-    width: 80%;
-    display: inline-block;
-    text-align: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    }
+section {
+  position: relative;
+  padding: 0;
+}
 
-  .breakfast-text,
-  .cta-text,
-  .lunch-text,
-  .allergy-text {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-  }
+.breakfast-text,
+.lunch-text,
+.allergy-text,
+.cta-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
-  .cta-text {
-    padding-bottom: 1rem;
-  }
-
-  .s-lunch-button {
-    width: 30%;
-    display: inline-block;
-    text-align: center;
-    font-size: 0.8rem;
-    max-width: 6rem;
-  }
-
-  footer {
-    position: relative;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    overflow: visible;
-  }
-
-  a {
-    padding: 0;
-    margin: 0;
-  }
-
-  .acfood-logo {
-    width: 6rem;
-    position: absolute;
-    left: 3%
-  }
-
-  .social-media-buttons {
-    text-align: right;
-    display: inline-block;
-    position: absolute;
-    right: 3%;
-  }
-
-  .social-media-buttons a {
-    display: inline-block;
-    width: 2rem;
-  }
-
-  section {
-    position: relative;
-    padding: 0;
-  }
-
-  .call-to-action {
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .breakfast-text,
-  .lunch-text,
-  .allergy-text,
-  .cta-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
+.info-containment {
+  text-align: center;
+}
 
 @media only screen and (min-width: 25em) {
 
-
+h2 {
+  font-size: 2.2rem;
+}
 
 }
 
@@ -250,12 +278,32 @@ nav {
 
 @media only screen and (min-width: 60em) {
 
+  .breakfast-text,
+  .cta-text,
+  .lunch-text,
+  .allergy-text{
+    width: 40%;
+  }
 
+  .section-information {
+    width: 40%;
+    display: inline-block;
+  }
+
+  .information-text {
+    width: 100%
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
 
 }
 
 @media only screen and (min-width: 90em) {
 
-
+h2 {
+  font-size: 2.6rem;
+}
 
 }
